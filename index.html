@@ -83,5 +83,15 @@ form.addEventListener('submit',e=>{e.preventDefault();if(!document.querySelector
 function showToast(msg){const t=document.querySelector('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3200)}
 const gate=document.querySelector('#ageGate');document.querySelector('#adultEnter').addEventListener('click',()=>gate.classList.add('show'));document.querySelector('#confirmAdult').addEventListener('click',()=>{gate.classList.remove('show');document.querySelector('#adult').scrollIntoView({behavior:'smooth'});showToast('Demo gate only: live age verification is not enabled.')});document.querySelector('#leaveAdult').addEventListener('click',()=>gate.classList.remove('show'));
 </script>
+<!-- MOD Adult Safety Notice and Policy Links --><section id="mod-safety" style="max-width:900px;margin:30px auto;padding:24px 18px;font-family:Arial,sans-serif;line-height:1.6;border-top:1px solid #888;">
+  <h2>MOD — Models on Demand</h2>
+  <h3>Adults Only — 18+</h3>
+  <p>This website is intended for adults aged 18 and older. Minors may not participate or submit content. This notice does not verify age. Do not upload identification documents or intimate images to this prototype.</p>  <h3>Consent and Model Rights</h3>
+  <p>Any future photography or content must involve adults who freely and knowingly consent to the activity and intended use. Obtain permission before publishing or sharing images. Respect withdrawal of consent and promptly review removal requests.</p>  <h3>Privacy</h3>
+  <p>This prototype does not offer member accounts or adult-content uploads. Do not submit sensitive personal information. Before adding interactive features, MOD must publish a complete privacy policy explaining data collection, storage, use, sharing, retention, and deletion.</p>  <h3>Content and Conduct Rules</h3>
+  <p>Prohibited conduct includes sexual content involving minors, nonconsensual intimate imagery, impersonation, harassment, threats, and sharing private information without permission.</p>  <h3>Reporting and Removal Requests</h3>
+  <p>A verified contact method for safety reports, privacy concerns, and removal requests must be published before user submissions are enabled.</p>  <p><strong>Important:</strong> This notice is not a substitute for reliable age assurance, a complete privacy policy, or legal review.</p>
+</section>
+<!-- End MOD Adult Safety Notice -->
 </body>
 </html>
